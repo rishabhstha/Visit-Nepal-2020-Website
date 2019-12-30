@@ -1,274 +1,297 @@
 <!DOCTYPE html>
-<html>
-<head>
-    
-	 <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="../css/style4.css">
-     <link href="../css/bootstrap.min.css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../css/style4.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <style>
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-</style>
-</head>
-<body>
+      @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <header>
+            <a class="navbar-brand" href="home.html">Visit Nepal 2020</a>
+          </header>
+        </div>
 
-    
-   <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-  
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Visit Nepal 2020</a>
-    </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <!--        <li class="active"><a href="#">Places<span class="sr-only">(current)</span></a></li>-->
 
-    
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-<!--
-        <li class="active"><a href="#">Places<span class="sr-only">(current)</span></a></li>
-        
--->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Places.html">Places</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Places.html">Places</a></li>
             <li><a href="Activities.html">Activities</a></li>
-          <li><a class="active" href="Contact.html">Contact Us</a></li>
-        </ul>
+            <li class="logged-out active">
+              <a href="Contact.html">Contact Us</a>
+            </li>
+            <li class="logged-in" id="login">
+              <a href="login.html">Sign In</a>
+            </li>
+
+            <li id="logout">
+              <a href="#" class="grey-text">Sign Out</a>
+            </li>
+          </ul>
         </div>
-        </div>
+      </div>
+      <!-- /.container-fluid -->
     </nav>
 
-    
+    <div class="row">
+      <div class="bg"></div>
+      <!-- /.bg -->
+    </div>
 
     <div class="container1">
-\
-<section class="mb-4">
+      \
+      <section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-center my-4" id="top">
+          Contact us
+        </h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">
+          Do you have any questions? Please do not hesitate to contact us
+          directly. Our team will come back to you within a matter of hours to
+          help you.
+        </p>
 
-    <h2 class="h1-responsive font-weight-bold text-center my-4" id="top">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
-    
-    <br>
-    <br>
+        <br />
+        <br />
 
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                              <label>First Name</label>
-                            <input type="text" class="form-control" placeholder="Enter your first name">
-                          
-                        </div>
-                    </div> 
-                    
-                     <div class="col-md-6">
-                        <div class="md-form mb-0">
-                              <label>Last Name</label>
-                            <input type="text" class="form-control" placeholder="Enter your last name">
-                          
-                        </div>
-                    </div> 
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form
+              class="contact-form"
+              id="contact-form"
+              name="contact-form"
+              action="../mail.php"
+              method="POST"
+            >
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="firstname">First Name</label>
+                    <input
+                      name="firstname"
+                      id="firstname"
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your first name"
+                      required
+                      minlength="5"
+                      size="30"
+                    />
+                  </div>
                 </div>
-                <br>
-            
-                    <!--Grid column-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                             <label for="email" class="">E-mail</label>
-                            <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email address">
-                           
-                        </div>
-                    </div>
-                    <!--Grid column-->
 
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="lastname">Last Name</label>
+                    <input
+                      name="lastname"
+                      id="lastname"
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your last name"
+                      required
+                      minlength="5"
+                      size="30"
+                    />
+                  </div>
                 </div>
-                <!--Grid row-->
-                <br>
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                               <label for="subject" class="">Country</label>
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter country where you From">
-                         
-                        </div>
-                    </div>
+              </div>
+              <br />
+
+              <!--Grid column-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="email1" class="">E-mail</label>
+                    <input
+                      type="text"
+                      id="email1"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email(xxxxx@go.olemiss.edu)"
+                      pattern=".+@go.olemiss.edu"
+                      required
+                      title="Please enter your go.olemiss.edu email"
+                      minlength="5"
+                      size="30"
+                    />
+                  </div>
                 </div>
-                <br>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                             <label for="message">Your message</label>
-                            <textarea id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Enter your message here"></textarea>
-                           
-                        </div>
-
-                    </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+              <br />
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="subject" class="">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                      required
+                      minlength="5"
+                      size="30"
+                      placeholder="Enter the subject of your email"
+                    />
+                  </div>
                 </div>
-                <!--Grid row-->
+              </div>
+              <br />
+              <!--Grid row-->
 
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <label for="message1">Your message</label>
+                    <textarea
+                      id="message1"
+                      name="message"
+                      rows="2"
+                      class="form-control md-textarea"
+                      placeholder="Enter your message here"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  name="submit"
+                  class="btn btn-primary btn-lg btn-block"
+                >
+                  Send
+                </button>
+              </div>
             </form>
-
-            <div class="text-center">
-                <a class="btn btn-primary" >Send</a>
-            </div>
-         
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-      
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fa fa-map-marker-alt"></i>
-                    <p>Kathmandu, Nepal</p>
-                </li>
-
-                <li><i class="fa fa-phone"></i>
-                    <p>+ 977 9867170943</p>
-                </li>
-
-                <li><i class="fa fa-envelope "></i>
-                    <p>nepalvisit2020@gmail.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-  
-    </div>
-
-</section>
-<!--Section: Contact v.2-->    
-    </div>
-    
-    
-    
-<!--
-
-  <div class="hancy">
- <div class="contact-form">
-    <h1>If you have any questions related to travel to Nepal, then you can submit this form</h1>
-      <div class="txtb">
-          <label> First Name : </label>
-            <input type="text" required placeholder="Enter Your First Name ">
-      </div>
-    
-     <div class="txtb">
-        <label> Last Name : </label>
-        <input type="text" placeholder="Enter Your Last Name " required >
-          
-    </div>
-    
-     <div class="txtb">
-        <label> Email: </label>
-        <input type="text" placeholder="Enter Your E-mail Address" required>
-          
-    </div>
-    
-     <div class="txtb">
-        <label> Country:  </label>
-        <input type="text" placeholder="Enter Country  Where You From " required>
-        
-    </div>
-    
-     <div class="txtb">
-        <label> Message:  </label>
-        <input type="text" placeholder="Enter Your Message to us" required>
-          <textarea>  </textarea>
-    </div>
-    
-    <a href="Contact.html" class="btn"> Send </a>
-        
-    </div>
-    
-  </div>
-  
- -->   
-   
-
-
-
-<img class="center" src="../img/nam.jpg"  alt="Picture of a namaste">
-    
-
-    
-    
-    
-<footer class="sticky-bottom">
-    <div class="container1"><br>
-    <div class="row">
-    <div class="col-md-2">
-
-    <h4 class="text-center"><a href="Places.html">Destinations</a></h4>
-     <ul  class="unstyled text-center">
-            <li class="text-center"><a href="Places.html#target1" >Kathmandu </a> </li>
-            <li> <a href="Places.html#target2" >Pokhara </a></li>
-            <li><a href="Places.html#target4" > Annapurna Base Camp </a></li>
-            <li><a href="Places.html#target6" > Chitwan National Park</a></li>
-        </ul>
-        
-        </div>
-    <div class="col-md-2">
-        <h4 class="text-center"><a href="Activities.html">Activities</a></h4>
-         <ul class="text-center">
-            <li><a href="Activities.html#target10" >Rafting</a> </li>
-            <li> <a href="Activities.html#target9" >Mountaineering</a></li>
-            <li><a href="Activities.html#target7" > Trekking</a></li>
-            <li><a href="Activities.html#target12" > Jungle Safari</a></li>
-        </ul>
-    
-        
-    </div>
           </div>
-    </div>
-    <div class="container2">
-    <div class="row">
-        <div class="col-md-12">
-		 Subscribe for updates:
-	<input type="text" required minlength="3" maxlength="40" size="40" placeholder="Enter your email here">
- <button type="button"> Submit </button>
-    </div>
-    </div>
+          <!--Grid row-->
+
+          <!--Grid column-->
+
+          <!--Grid column-->
+
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fa fa-map-marker-alt"></i>
+                <p>Kathmandu, Nepal</p>
+              </li>
+
+              <li>
+                <i class="fa fa-phone"></i>
+                <p>+ 977 9867170943</p>
+              </li>
+
+              <li>
+                <i class="fa fa-envelope "></i>
+                <p>nepalvisit2020@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+      </section>
+      <!--Section: Contact v.2-->
     </div>
 
-  
-</footer>
+    <img class="center" src="../img/nam.jpg" alt="Picture of a namaste" />
+    <footer>
+      <div class="container1">
+        <br />
+        <div class="row">
+          <div class="col-md-2">
+            <h4 class="text-center"><a href="Places.html">Destinations</a></h4>
+            <ul class="unstyled text-center">
+              <li class="text-center">
+                <a href="Places.html#target1">Kathmandu </a>
+              </li>
+              <li><a href="Places.html#target2">Pokhara </a></li>
+              <li><a href="Places.html#target4"> Annapurna Base Camp </a></li>
+              <li><a href="Places.html#target6"> Chitwan National Park</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="text-center">
+              <a href="Activities.html">Activities</a>
+            </h4>
+            <ul class="text-center">
+              <li><a href="Activities.html#target10">Rafting</a></li>
+              <li><a href="Activities.html#target9">Mountaineering</a></li>
+              <li><a href="Activities.html#target7"> Trekking</a></li>
+              <li><a href="Activities.html#target12"> Jungle Safari</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <span id="date" class="footer-date"></span>
+        </div>
+      </div>
+      <!-- </div> -->
+    </footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-    
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    
-    </body>
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/date.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+    <script src="../js/fb.js"></script>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/signout.js"></script>
+    <script src="../js/fortunecookie.js"></script>
+  </body>
 </html>
-
-    
-
-    
