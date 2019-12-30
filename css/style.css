@@ -1,138 +1,134 @@
-
-head{
-background:#fff
+head {
+  background: #fff;
 }
 
-body{
-    background-color:#f4f4f4;
-    color:#555;
-    font-family:Arial, Helvetica, sans-serif;
-    font size:18px;
-    line-height:1.6em;
-    margin:0
-    
+body {
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  fontsize: 18px;
+  line-height: 1.6em;
+  margin: 0;
 }
 
+.navbar {
+  margin-bottom: 0;
 
-
-  .navbar{
-              margin-bottom:0;
-         
-              border-radius:0;
-            padding-bottom: 5px;
-              
-   
+  border-radius: 0;
+  padding-bottom: 5px;
 }
-.navbar-brand{
-      font-family:Dancing Script, cursive;  
-     font-weight: 400;
-    font-size: 28px;
+.navbar-brand {
+  font-family: Dancing Script, cursive;
+  font-weight: 400;
+  font-size: 28px;
 }
 
-.nav navbar-nav{
-    float: right;
+.nav navbar-nav {
+  float: right;
 }
 
-.navbar-nav .active{
-    background:black;
-    padding-bottom:20px;
+.navbar-nav .active {
+  background: black;
+  padding-bottom: 20px;
 }
 
-    
-.bg{
-    background-image: url(../img/Img1.jpeg); 
-    height: 500px;
+.bg {
+  background-image: url(../img/Img1.jpeg);
+  height: 500px;
 
-    width: 99%;
-    background-repeat: no-repeat;
+  width: 99%;
+  background-repeat: no-repeat;
 
-    background-position: center center;
-    background-attachment: fixed;
+  background-position: center center;
+  background-attachment: fixed;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 
-    -o-background-size: cover;
-    background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-
-
-
-#heading{
-    padding-top:20px;
+#heading {
+  padding-top: 20px;
 }
 
-#description{
-    padding-top:30px;
-    padding-bottom:100px;
-    font-size: 19px;
-    font-family:  'Montserrat', sans-serif;
-    line-height: 1.7em;
+#description {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7em;
 }
 
-
-
-
-#video1{
-    background: #000;
-    padding-top: 20px;
-    
+#video1 {
+  background: #000;
+  padding-top: 20px;
 }
 
-
-#heads{
-    padding: 20px;
+#heads {
+  padding: 20px;
+}
+#funfact1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#funfact1 h2 {
+  align-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  cursor: pointer;
 }
 
-
-
+.sano {
+  max-width: 100%;
+}
 /*footer*/
-
-.center{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-   width:70px;
-    height:70px;
-    
+.thulo {
+  font-size: 18px;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
 }
 
-.container1{
-   background:#3f4852;
-   color:white;
-    padding-left:10px;
-    line-height: 1.8em;
+.container1 {
+  background: #3f4852;
+  color: white;
+  padding-left: 10px;
+  line-height: 1.8em;
 }
 
-
-
-.col-md-2 ul{
-    list-style-type:  none;
-    font-size:11px;
-    padding-bottom:10px;
+.col-md-2 ul {
+  list-style-type: none;
+  font-size: 11px;
+  padding-bottom: 10px;
 }
-.col-md-2 a{
-    color:white;
-    
+.col-md-2 a {
+  color: white;
 }
 
-.col-md-2 h4{
-    padding-left: 30px;
-    font-size:14px;
+.col-md-2 h4 {
+  padding-left: 30px;
+  font-size: 14px;
 }
 
-.container2{
-    padding-left:10px;
+.container2 {
+  padding-left: 10px;
 }
-.col-md-12{
-    background:#403e3e;
-    color:aliceblue;
-    border: 10px 10px;
-    padding:20px 20px;
+.col-md-12 {
+  background: #403e3e;
+  color: aliceblue;
+  border: 10px 10px;
+  padding: 20px 20px;
 }
-.col-md-12 button{
-    color:black;
+.col-md-12 button {
+  color: black;
 }
 
 /*
@@ -198,6 +194,3 @@ body{
 
 
 */
-
-
-
